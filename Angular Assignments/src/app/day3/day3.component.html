@@ -1,0 +1,19 @@
+<div>
+    <h3>option 1</h3>
+    <input type="text" placeholder="{{title}}">
+</div>
+<div>
+    <h3>Option 2</h3>
+    <input type="text" [placeholder]="title"> other way-->
+</div>
+<div>
+    <input type="text" placeholder="formcontrol">
+    <button type="submit" (click)="addtask()">add task</button>
+</div>
+<div>{{task.value}}</div> 
+<div *ngFor="let item of tasklist">{{item}}</div>
+
+<form>
+    <div>form tag</div>
+</form>
+
